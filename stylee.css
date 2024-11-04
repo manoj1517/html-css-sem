@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #e9f5fb; /* Light blue background */
+}
+
+.sidebar {
+    width: 100%;
+    max-width: 250px;
+    margin-right: 20px;
+    background: #4caf50; /* Green background for sidebar */
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: white; /* White text */
+}
+
+.sidebar h3 {
+    margin-top: 0;
+    color: #ffffff; /* White text for headings */
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #ffeb3b; /* Yellow color for links */
+    transition: color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    color: #ffffff; /* Change to white on hover */
+}
+
+.content {
+    overflow: auto;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.aquarium-type, .food-type, .accessory {
+    background: #ffffff; /* White background for content areas */
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px white(194, 185, 185, 0.1);
+    border-left: 5px solid #2196f3; /* Blue left border for emphasis */
+}
+
+.aquarium-type h3, .food-type h3, .accessory h3 {
+    color: #2196f3; /* Blue for section headings */
+}
+
+.aquarium-type img, .food-type img, .accessory img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+    body {
+        display: flex;
+    }
+
+    .sidebar {
+        width: 250px;
+        margin-right: 20px;
+    }
+
+    .content {
+        flex: 1;
+    }
+}
+
+/* Additional styling for list items in maintenance tips */
+ul {
+    list-style-type: disc;color: #e9f5fb;
+    padding-left: 20px;
+    color: #e9f5fb;
+}
+
+ul li {
+    margin: 5px 0;
+    color: #941717; /* Dark text color for list items */
+}
+/* ------------------------------------------------------------------------------------ */
+/* ----------------------------------contact-------------------------------------------- */
+body {
+    background-color: #57636e;
+    font-family: 'Roboto', sans-serif;
+}
+.contact-form {
+    background: linear-gradient(to right, #d5c4bf, #9c9b99);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(235, 227, 227, 0.1);
+}
+.contact-form h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+.form-control {
+    border-radius: 20px;
+    border: 1px solid #dfe0c8;
+}
+.form-control:focus {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    border-color: #ffffff;
+}
+.btn-custom {
+    background-color: #ff6f61;
+    border-radius: 20px;
+}
+.btn-custom:hover {
+    background-color: #ff3d30;
+}
